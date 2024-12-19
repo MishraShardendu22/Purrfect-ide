@@ -1,10 +1,24 @@
-// import { SignedIn, SignedOut, SignOutButton, SignUpButton, UserButton } from '@clerk/nextjs'
+import { SignedIn, SignedOut, SignOutButton, SignUpButton, UserButton } from '@clerk/nextjs'
 import React from 'react'
 
 const page = () => {
   return (
     <>
-    
+      <div>
+<SignedOut>
+  <SignUpButton>
+
+  </SignUpButton>
+</SignedOut>
+
+<UserButton />
+
+<SignedIn>
+  <SignOutButton>
+
+  </SignOutButton>
+</SignedIn>
+</div>
     </>
   )
 }
@@ -12,18 +26,3 @@ const page = () => {
 export default page
 
 
-// <div>
-// <SignedOut>
-//   <SignUpButton>
-
-//   </SignUpButton>
-// </SignedOut>
-
-// <UserButton />
-
-// <SignedIn>
-//   <SignOutButton>
-
-//   </SignOutButton>
-// </SignedIn>
-// </div>
