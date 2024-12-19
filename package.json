@@ -13,7 +13,8 @@
     "convex": "^1.17.4",
     "next": "15.1.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "svix": "^1.44.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
