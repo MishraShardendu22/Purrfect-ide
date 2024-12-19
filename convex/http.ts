@@ -3,7 +3,7 @@ import { Webhook } from "svix";
 import { httpAction } from "./_generated/server";
 import { httpRouter } from "convex/server";
 import { WebhookEvent } from "@clerk/nextjs/server";
-import { api, internal } from "./_generated/api";
+import { api } from "./_generated/api";
 
 const http = httpRouter();
 
