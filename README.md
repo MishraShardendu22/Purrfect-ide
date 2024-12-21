@@ -67,8 +67,6 @@ The codebase is organized as follows:
 ## 🌟 Feedback
 Your feedback is invaluable! Feel free to open an issue or connect with me to discuss this project further. Together, let’s innovate and build tools for the future.
 
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 - **Demo Video**: [Watch on YouTube](https://youtu.be/ksNoJqxavnM)
