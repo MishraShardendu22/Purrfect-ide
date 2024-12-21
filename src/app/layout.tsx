@@ -36,7 +36,6 @@ export default function RootLayout({
         >
           <ConvexClientProvider>
             <div className="flex-grow">{children}</div>
-            <Footer />
           </ConvexClientProvider>
         </body>
       </html>
