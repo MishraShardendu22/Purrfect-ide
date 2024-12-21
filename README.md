@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Purrfect IDE
 
-## Getting Started
+## 🚀 Overview
+Purrfect IDE is a fully integrated development environment built from scratch to enhance developer productivity. With features like a customizable editor and multi-language support, it is designed to cater to the diverse needs of developers across the globe. This project reflects my passion for solving complex problems and creating tools that resonate with developers.
 
-First, run the development server:
+## ✨ Features
+- **Customizable Editor**: Tailored to suit individual coding preferences.
+- **Multi-language Support**: Code seamlessly in your favorite languages, from C++ to Go.
+- **User-friendly Interface**: Leveraging cutting-edge UI/UX principles to ensure ease of use.
+- **Modern Design**: Built with the latest tools and libraries for a sleek and responsive experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+### Frontend
+- **React**
+- **Next.js**
+- **Tailwind CSS**
+- **Shadcn**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Backend
+- **Convex**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Additional Tools
+- **Authentication**: Clerk
+- **Editor**: Monaco Editor
+- **Icons**: Lucide-react
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎓 What I Learned
+This project was a challenging yet rewarding experience, teaching me the importance of:
+- Meticulous planning and attention to detail.
+- Gathering and integrating user feedback to refine the tool.
+- Exploring advanced frontend and backend integrations.
 
-## Learn More
+## 🔮 Next Steps
+- Further refinements and feature enhancements.
+- Exploring ways to make the IDE accessible to a wider audience.
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contribution
+Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Project Structure
+The codebase is organized as follows:
+- `pages/` - Application pages built with Next.js.
+- `components/` - Reusable UI components.
+- `styles/` - Tailwind CSS for styling.
+- `utils/` - Helper functions and utilities.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📲 Getting Started
+### Prerequisites
+- Node.js installed on your system.
+- Clone the repository:
+  ```bash
+  git clone https://github.com/MishraShardendu22/purrfect-ide.git
+  cd purrfect-ide
+  ```
 
-## Deploy on Vercel
+### Installation
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌟 Feedback
+Your feedback is invaluable! Feel free to open an issue or connect with me to discuss this project further. Together, let’s innovate and build tools for the future.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+- **Demo Video**: [Watch on YouTube](https://youtu.be/ksNoJqxavnM)
+- **GitHub Repo**: [Purrfect IDE](https://github.com/MishraShardendu22/purrfect-ide)
+
+---
+**Developed with ❤️ by [Shardendu Mishra](https://github.com/MishraShardendu22)**
