@@ -12,7 +12,6 @@ import ThemeSelector from '@/components/ThemeSelector';
 import LanguageSelector from '@/components/LanguageSelector';
 import { api } from '../../../../convex/_generated/api';
 
-// Separate the Logo component for better organization
 const Logo = () => (
   <div className="group relative flex items-center">
     <Link href="/">
