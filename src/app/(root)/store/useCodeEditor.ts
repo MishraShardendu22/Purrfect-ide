@@ -70,21 +70,22 @@ export const useCodeEditorStore = create<CodeEditorState>((set: any, get: any) =
       }
       set({ fontSize });
     },
-
     runCode: async () => {
       const { language, getCode } = get();
-      const code = getCode();
-
-      if (!code) {
-        set({ error: "Please write some code to run" });
+      const code = localStorage.getItem(`editor-code-${language}`) || getCode();  
+    
+      if (!code.trim()) {
+        set({ error: "Please write some valid code to run" });
         return;
       }
-
+    
       set({ isRunning: true, output: "", error: "" });
-
+    
       try {
         const runtime = LANGUAGE_CONFIG[language].pistonRuntime;
-        const res = await fetch("https://emkc.org/api/v1/piston/execute", {
+        console.log("cp-1")
+        console.log(code);
+        const res = await fetch("https://emkc.org/api/v2/piston/execute", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -92,15 +93,25 @@ export const useCodeEditorStore = create<CodeEditorState>((set: any, get: any) =
           body: JSON.stringify({
             language,
             version: runtime.version,
-            files: [
-              {
-                content: code,
-              },
-            ],
+            files: [{ content: code }],
           }),
         });
-
+        console.log("cp-2")
+    
+        if (!res.ok) {
+          set({
+            error: `Request failed with status ${res.status}`,
+            executionResult: {
+              code,
+              output: "",
+              error: `Request failed with status ${res.status}`,
+            },
+          });
+          return;
+        }
+    
         const data = await res.json();
+    
         if (data.message) {
           set({
             error: data.message,
@@ -112,7 +123,7 @@ export const useCodeEditorStore = create<CodeEditorState>((set: any, get: any) =
           });
           return;
         }
-
+    
         if (data.run && data.run.code !== 0) {
           const errorOutput = data.run.stderr || data.run.output;
           set({
@@ -125,9 +136,8 @@ export const useCodeEditorStore = create<CodeEditorState>((set: any, get: any) =
           });
           return;
         }
-
+    
         const output = data.run.output;
-
         set({
           output: output.trim(),
           error: null,
@@ -137,6 +147,7 @@ export const useCodeEditorStore = create<CodeEditorState>((set: any, get: any) =
             error: null,
           },
         });
+    
       } catch (error) {
         console.error("Error running code:", error);
         set({

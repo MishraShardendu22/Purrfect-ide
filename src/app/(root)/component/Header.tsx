@@ -6,7 +6,7 @@ import { SignedIn } from '@clerk/nextjs';
 import { Blocks, Code, Crown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import RunButton from '@/components/RunButton';
+import RunButton from '@/app/(root)/component/RunButton';
 import HeaderProfileButton from '@/components/HeaderProfileButton';
 import ThemeSelector from '@/components/ThemeSelector';
 import LanguageSelector from '@/components/LanguageSelector';
